@@ -14,4 +14,5 @@ public interface IPeerAssessment {
     void createQuiz(StudentIdentifier student, String question, String[] answers);     //writes a new question into the DB
     int[] calculateAssessment(Performance[] performanceOfAllStudents); // calculates marks for every performance and writes it to an array
     int meanOfAssessement(String ProjectId);
+    StudentIdentifier[] showOutliers(GroupIdentifier group); //Calculates statistical outliers and returns thier Id's for further examination
 }
